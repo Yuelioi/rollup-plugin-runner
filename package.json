@@ -1,0 +1,52 @@
+{
+    "name": "rollup-plugin-runner",
+    "version": "1.0.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "Rollup plugin that executes code after bundling",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Yuelioi/rollup-plugin-runner"
+    },
+    "author": "yueli",
+    "homepage": "https://github.com/Yuelioi/rollup-plugin-runner#readme",
+    "bugs": "https://github.com/Yuelioi/rollup-plugin-runner/issues",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/es/index.js",
+    "exports": {
+        "types": "./types/index.d.ts",
+        "import": "./dist/es/index.js",
+        "default": "./dist/cjs/index.js"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "scripts": {},
+    "files": [
+        "dist",
+        "!dist/**/*.map",
+        "types",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "rollup",
+        "plugin",
+        "npm",
+        "code runner"
+    ],
+    "peerDependencies": {
+        "rollup": "^2.0.0||^3.0.0"
+    },
+    "peerDependenciesMeta": {
+        "rollup": {
+            "optional": true
+        }
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "rollup": "^3.2.3"
+    }
+}
